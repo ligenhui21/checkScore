@@ -1,16 +1,25 @@
 package entity;
 
 public class Score {
-    private String identityNo;
-    private String clazzNo;
-    private int score;
+    private Long id;
+    private String idcardNo;    //身份证号
+    private String clazzNo; //课程编号
+    private int score;  //分数
 
-    public String getIdentityNo() {
-        return identityNo;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdentityNo(String identityNo) {
-        this.identityNo = identityNo;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getIdcardNo() {
+        return idcardNo;
+    }
+
+    public void setIdcardNo(String idcardNo) {
+        this.idcardNo = idcardNo;
     }
 
     public String getClazzNo() {
