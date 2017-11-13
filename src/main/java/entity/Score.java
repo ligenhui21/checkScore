@@ -4,7 +4,9 @@ public class Score {
     private Long id;
     private String idcardNo;    //身份证号
     private String clazzNo; //课程编号
-    private int score;  //分数
+    private int scoreExcel;  //excel中的分数
+    private int scoreHtml;  //网站上的分数
+    private String time;
 
     public Long getId() {
         return id;
@@ -30,11 +32,27 @@ public class Score {
         this.clazzNo = clazzNo;
     }
 
-    public int getScore() {
-        return score;
+    public int getScoreExcel() {
+        return scoreExcel;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setScoreExcel(int scoreExcel) {
+        this.scoreExcel = scoreExcel;
+    }
+
+    public int getScoreHtml() {
+        return scoreHtml;
+    }
+
+    public void setScoreHtml(int scoreHtml) {
+        this.scoreHtml = scoreHtml;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }

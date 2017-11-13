@@ -6,6 +6,12 @@ public class Clazz {
     private String clazzName;   //课程名
     private Integer clazzType;  //课程类型（0-统考课程；1-衔接课程；2-学分互认课程；3-毕业论文）
 
+    public Clazz(String clazzNo, String clazzName, Integer clazzType){
+        this.clazzNo = clazzNo;
+        this.clazzName = clazzName;
+        this.clazzType = clazzType;
+    }
+
     public Long getId() {
         return id;
     }

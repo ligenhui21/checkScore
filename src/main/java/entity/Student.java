@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.List;
+
 public class Student {
 
     private Long id;
@@ -18,10 +20,12 @@ public class Student {
     private String principal;   //负责人
     private String unit;    //上报单位
     private String teacher; //老师
-    private Integer isMembership;   //是否在籍、退报、转专业、或毕业、拟毕业
+    private String isMembership;   //是否在籍、退报、转专业、或毕业、拟毕业
     private String turnSpeciality;  //所转专业
     private String remark;  //备注
     private String newRemark;   //2016年5月备注
+
+    private List<Score> scoreList;
 
     public Long getId() {
         return id;
@@ -151,11 +155,11 @@ public class Student {
         this.teacher = teacher;
     }
 
-    public Integer getIsMembership() {
+    public String getIsMembership() {
         return isMembership;
     }
 
-    public void setIsMembership(Integer isMembership) {
+    public void setIsMembership(String isMembership) {
         this.isMembership = isMembership;
     }
 
@@ -181,5 +185,13 @@ public class Student {
 
     public void setNewRemark(String newRemark) {
         this.newRemark = newRemark;
+    }
+
+    public List<Score> getScoreList() {
+        return scoreList;
+    }
+
+    public void setScoreList(List<Score> scoreList) {
+        this.scoreList = scoreList;
     }
 }
